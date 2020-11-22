@@ -3,7 +3,6 @@ const renderToString = require('react-dom/server').renderToString;
 const matchPath = require('react-router').matchPath;
 const path = require('path');
 const fs = require('fs');
-const configureStore = require('../src/configure-store').default;
 
 const App = require('../src/App').default;
 

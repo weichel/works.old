@@ -1,5 +1,6 @@
 import React from 'react';
 import Home from './components/Home';
+import Test from './components/Test';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import { StaticRouter } from 'react-router';
 
@@ -15,7 +16,8 @@ const NoMatch = () => (
 const AppRoutes = () => (
     <Switch>
       <Route path="/" component={Home} exact />
-      }} exact />
+      <Route path="/test" component={Test} exact />
+
 
       <Route render={NoMatch} />
     </Switch>
